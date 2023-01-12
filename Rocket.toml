@@ -1,0 +1,6 @@
+[default]
+name = "anang"
+age = 25
+
+[default.databases.my_db]
+url = "postgres://postgres:contoh@localhost:5432/postgres"

@@ -1,0 +1,13 @@
+# install diesel
+cargo install diesel_cli@1.4.1 --no-default-features --features postgres
+
+#install library postgres
+cargo install diesel_cli@1.4.1 --no-default-features --features postgres
+
+#create migration
+diesel migration generate create_blog_posts
+
+#run migration
+diesel migration run \
+  --database-url postgresql://postgres:example@localhost:5432/postgres
+
